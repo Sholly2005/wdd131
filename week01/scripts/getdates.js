@@ -1,7 +1,7 @@
-// Output current year dynamically
+// Show current year dynamically
 const currentYearSpan = document.getElementById("currentyear");
 currentYearSpan.textContent = new Date().getFullYear();
 
-// Output document last modified date/time
+// Show document last modified date/time
 const lastModifiedParagraph = document.getElementById("lastModified");
 lastModifiedParagraph.textContent = `Last Modification: ${document.lastModified}`;
