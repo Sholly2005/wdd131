@@ -1,0 +1,20 @@
+@media (min-width: 650px) {
+  #menu {
+    display: none; /* Hide hamburger button on larger screens */
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 1rem;
+  }
+
+  .res-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns as shown in the mockup */
+  }
+}
