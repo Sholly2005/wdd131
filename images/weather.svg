@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48">
+  <!-- Sun -->
+  <g fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round">
+    <circle cx="32" cy="24" r="10" fill="#f8e71c" />
+    <line x1="32" y1="8" x2="32" y2="11" />
+    <line x1="32" y1="37" x2="32" y2="40" />
+    <line x1="16" y1="24" x2="19" y2="24" />
+    <line x1="45" y1="24" x2="48" y2="24" />
+    <line x1="20.7" y1="12.7" x2="22.8" y2="14.8" />
+    <line x1="41.2" y1="33.2" x2="43.3" y2="35.3" />
+    <line x1="20.7" y1="35.3" x2="22.8" y2="33.2" />
+    <line x1="41.2" y1="14.8" x2="43.3" y2="12.7" />
+  </g>
+
+  <!-- Cloud -->
+  <path d="M 22 42 
+           A 8 8 0 0 1 23 26 
+           A 11 11 0 0 1 43 28 
+           A 7 7 0 0 1 48 42 
+           Z" 
+        fill="#e6c280" stroke="#333333" stroke-width="2.5" stroke-linejoin="round" />
+
+  <!-- Rain Drops -->
+  <g stroke="#333333" stroke-width="2" stroke-dasharray="1 3" stroke-linecap="round">
+    <line x1="24" y1="46" x2="24" y2="52" />
+    <line x1="30" y1="46" x2="30" y2="52" />
+    <line x1="36" y1="46" x2="36" y2="52" />
+    <line x1="42" y1="46" x2="42" y2="52" />
+  </g>
+</svg>

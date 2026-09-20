@@ -1,0 +1,162 @@
+/* Global CSS Variables */
+:root {
+    --primary-color: #d60036;       /* Flag Red */
+    --secondary-color: #007a3d;     /* Flag Green */
+    --bg-color: #f4f4f4;
+    --card-bg: rgba(255, 255, 255, 0.92);
+    --text-color: #222222;
+    --border-color: #dddddd;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--primary-color);
+    border-bottom: 8px solid var(--secondary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Mobile-First Layout */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+    background-color: var(--card-bg);
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.info-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-list li {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.label {
+    font-weight: bold;
+}
+
+/* Mobile SVG Icon */
+.weather-icon-mobile {
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Wider View Media Query (Desktop & Tablet) */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-container {
+        position: relative;
+        min-height: 550px;
+    }
+
+    .hero-img {
+        max-height: 600px;
+    }
+
+    /* Position cards directly over the background image as shown in wireframe */
+    .data-card {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 280px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        border-bottom: none;
+    }
+
+    .weather-card {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 280px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        border-bottom: none;
+    }
+
+    .data-card h2,
+    .weather-card h2 {
+        background-color: var(--secondary-color);
+        color: #ffffff;
+        padding: 0.5rem;
+        margin: -1.5rem -1.5rem 1rem -1.5rem;
+    }
+
+    .info-list li {
+        justify-content: space-between;
+    }
+
+    /* Hide mobile SVG in desktop view */
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    /* Weather Icon Emoticon via CSS Pseudo-element for Wide View */
+    .weather-title::after {
+        content: " ⛅";
+        font-size: 1.2rem;
+    }
+}
