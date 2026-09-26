@@ -1,0 +1,47 @@
+/* Card Container Grid */
+.res-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Temple Card Styling */
+.temple-card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.temple-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.temple-card p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.temple-card .label {
+  font-weight: bold;
+  color: #551a8b; /* Purple tone matching the screenshot requirement */
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  margin-top: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

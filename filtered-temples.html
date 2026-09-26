@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temple Album</title>
+  <meta name="description" content="A responsive filtered picture album page created for the WDD 131 course featuring LDS temples.">
+  <meta name="author" content="Bamidele Olusola">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Mobile-first CSS link order -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  
+  <!-- Deferred JavaScript -->
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <span>Temple Album</span>
+    <button id="menu" aria-label="Toggle Navigation"></button>
+    <nav class="navigation">
+      <a href="#" id="home">Home</a>
+      <a href="#" id="old">Old</a>
+      <a href="#" id="new">New</a>
+      <a href="#" id="large">Large</a>
+      <a href="#" id="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="heading">Home</h1>
+    <div id="temple-cards" class="res-grid"></div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Bamidele Olusola | Osun state, Nigeria.</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
