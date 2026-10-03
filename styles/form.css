@@ -133,3 +133,21 @@ footer {
     margin-top: 3rem;
     font-size: 0.9rem;
 }
+
+/* Responsive adjustments for larger screens */
+@media screen and (min-width: 600px) {
+    main {
+        margin: 3rem auto;
+    }
+
+    form {
+        padding: 2.5rem;
+    }
+
+    .submit-btn {
+        width: auto;
+        min-width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+}
