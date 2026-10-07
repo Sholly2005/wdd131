@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Budget Calculator - Interactive Finance Tools</title>
+    <meta name="description" content="Calculate income and expenses instantly using the Smart Budget Hub dynamic calculator.">
+    <meta name="author" content="Bamidele Olusola">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/tools.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/tools.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Smart Budget Hub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tools.html" class="active">Budget Tools</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="siteplan.html">Site Plan</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Interactive Expense Breakdown</h2>
+        
+        <form id="expense-form">
+            <label for="category">Category</label>
+            <select id="category" required>
+                <option value="" disabled selected>Select Category...</option>
+                <option value="Housing">Housing</option>
+                <option value="Food">Food</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Entertainment">Entertainment</option>
+            </select>
+
+            <label for="amount">Amount ($)</label>
+            <input type="number" id="amount" min="1" step="0.01" required placeholder="150.00">
+
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <section class="filter-section">
+            <label for="filter-category">Filter Category:</label>
+            <select id="filter-category">
+                <option value="All">All Categories</option>
+                <option value="Housing">Housing</option>
+                <option value="Food">Food</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Entertainment">Entertainment</option>
+            </select>
+        </section>
+
+        <section id="expense-summary">
+            <h3>Expense Summary</h3>
+            <ul id="expense-list"></ul>
+            <p>Total Expenses: $<strong id="total-amount">0.00</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Bamidele Olusola | Nigeria</p>
+        <p><a href="references.html">References Page</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

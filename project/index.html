@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Budget Hub - Take Control of Your Personal Finances</title>
+    <meta name="description" content="Smart Budget Hub helps you track expenses, plan savings goals, and master personal finance with interactive tools.">
+    <meta name="author" content="Bamidele Olusola">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Smart Budget Hub</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="tools.html">Budget Tools</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="siteplan.html">Site Plan</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.webp" alt="Financial planning dashboard visual" loading="lazy" width="800" height="400">
+            <div class="hero-text">
+                <h2>Master Your Money with Smart Tools</h2>
+                <p>Plan your budget, track savings goals, and manage your income effectively.</p>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <h2>Financial Tips & Guidelines</h2>
+            <div id="tips-container" class="cards-grid">
+                <!-- Dynamically generated using JS objects and template literals -->
+            </div>
+        </section>
+
+        <section class="interaction-card">
+            <h3>Saved Favorites Counter</h3>
+            <p>You have bookmarked <strong id="saved-count">0</strong> tips for quick access.</p>
+            <button id="reset-counter-btn">Reset Saved Count</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Bamidele Olusola | Nigeria</p>
+        <p><a href="references.html">References Page</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

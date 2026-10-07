@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Inquiries - Smart Budget Hub</title>
+    <meta name="description" content="Get in touch with the Smart Budget Hub team for feedback or financial tool inquiries.">
+    <meta name="author" content="Bamidele Olusola">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Smart Budget Hub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tools.html">Budget Tools</a>
+            <a href="contact.html" class="active">Contact Us</a>
+            <a href="siteplan.html">Site Plan</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <form method="get" action="contact.html" id="contact-form">
+            <label for="fullname">Full Name *</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Bamidele Olusola">
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="name@example.com">
+
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select Reason...</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Tool Feedback">Tool Feedback</option>
+                <option value="Bug Report">Bug Report</option>
+            </select>
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+
+        <div id="confirmation-message" class="hidden">
+            <!-- Dynamic confirmation populated by contact.js -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Bamidele Olusola | Nigeria</p>
+        <p><a href="references.html">References Page</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

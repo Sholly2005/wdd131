@@ -1,0 +1,128 @@
+/* Hero Banner */
+.hero {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.hero-text h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+.hero-text p {
+    margin: 0;
+}
+
+/* Financial Tips Grid */
+.tips-section {
+    margin-bottom: 2.5rem;
+}
+
+.tips-section h2 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 5px solid var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.badge {
+    align-self: flex-start;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid var(--border-color);
+    margin-bottom: 0.8rem;
+}
+
+.card button {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.card button:hover {
+    background-color: #09614a;
+}
+
+/* Saved Favorites Counter Card */
+.interaction-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.interaction-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+#saved-count {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+}
+
+#reset-counter-btn {
+    background-color: #c0392b;
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+#reset-counter-btn:hover {
+    background-color: #a93226;
+}
